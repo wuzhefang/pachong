@@ -229,8 +229,8 @@ public class WeiboSpider extends Spider {
 	public WebClient getWebClient() {
 		
 		WebClient webClient = new WebClient(BrowserVersion.CHROME);
-		
-		String k = "SINAGLOBAL=1150518204085.5288.1397436194676; myuid=1740276524; un=thefun@126.com; wvr=5; UOR=www.ditiezu.com,widget.weibo.com,iphone.tgbus.com; ULV=1404132495991:54:21:3:1343841806519.7766.1404132495978:1404094172953; TC-Page-G0=5e366de3f93a843287cf57cc85cd7f80; SUS=SID-1740276524-1404183075-XD-tncaw-ce10059dfcdf2b9e0da9b9d171a816fc; SUE=es%3Dd7fc843a4ac70e71413c596894e682cd%26ev%3Dv1%26es2%3D4c67bfd89aa7e4ba1199c86de6de7229%26rs0%3DKqlHCdN7LX3wgRIvVkcWldxdbrtWb%252FcS7eVPFjSiXfahzTbAj99nlkgJOmWIwV80npek3NX51mYAOslSiRe6mkxPUAr6X2WOfVNu9ZgXC8n4C%252FQyjjqcWybZup9LV7%252BYOJZgX4EjZbXHRYnd1Fb4F0EtsCiB88dM25bkOzgqRH0%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1404183075%26et%3D1404269475%26d%3Dc909%26i%3D16fc%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D0%26st%3D0%26uid%3D1740276524%26name%3Dthefun%2540126.com%26nick%3Dthefun%26fmp%3D%26lcp%3D2011-12-29%252012%253A36%253A24; SUB=AV1VbzHo4lKirPiw%2B1Xdlh%2FG2kUA%2FRtVZH15f2u81pW62oFv9c1srT4K26HYfDjeniWi423hBxXyebTiKz%2FJVUXUaf58pu9oRnrjopK0GV%2FAlvScp8EaFnCnkYiG8ddWCFz62xuhz58fVAea2la8oCw%3D; SUBP=002A2c-gVlwEm1uAWxfgXELuuu1xVxBxA7slKqFoDj2T-VUYnaYwHZ2uHY-u_E%3D; ALF=1435719075; SSOLoginState=1404183075";
+		//需使用自己的cookie
+		String k = "";
 		
 		Cookie cookie = new Cookie(this.getDomainName(), "", k);
 		
